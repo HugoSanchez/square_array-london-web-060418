@@ -1,3 +1,6 @@
 def square_array(array)
-  array.each 
+  squared_array = []
+  array.each do | number |
+    squared_array.inject number**2 
+  end
 end
